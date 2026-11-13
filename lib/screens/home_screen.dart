@@ -306,10 +306,10 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  void _openTaskForm(BuildContext context, {TaskModel? task}) {
+  void _openTaskForm(BuildContext context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (_) => TaskFormScreen(task: task)),
+      MaterialPageRoute(builder: (_) => TaskFormScreen()),
     );
   }
 
