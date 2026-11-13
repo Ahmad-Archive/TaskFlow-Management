@@ -83,7 +83,7 @@ class _TaskFormScreenState extends State<TaskFormScreen> {
           ),
         ),
       );
-      Navigator.pop(context);
+      Navigator.pop(context, taskData);
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -136,7 +136,7 @@ class _TaskFormScreenState extends State<TaskFormScreen> {
             const SizedBox(height: 16),
 
             DropdownButtonFormField<String>(
-              value: _status,
+              initialValue: _status,
               decoration: const InputDecoration(labelText: 'Status Pengerjaan'),
               items: const [
                 DropdownMenuItem(value: 'todo', child: Text('To-Do')),
@@ -151,7 +151,7 @@ class _TaskFormScreenState extends State<TaskFormScreen> {
             const SizedBox(height: 16),
 
             DropdownButtonFormField<String>(
-              value: _priority,
+              initialValue: _priority,
               decoration: const InputDecoration(labelText: 'Prioritas'),
               items: const [
                 DropdownMenuItem(value: 'low', child: Text('Low')),

@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import '../models/task_model.dart';
 
 class TaskService {
-  static const String _baseUrl = 'https://6af5ba65f6270fa08d688641.mockapi.io/tasks';
+  static const String _baseUrl = 'https://6af5ba65f6270fa08d688641.mockapi.io';
 
   final Dio _dio = Dio(
     BaseOptions(
