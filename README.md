@@ -1,4 +1,4 @@
-# TaskFlow — Aplikasi Manajemen Tugas & Proyek
+# TaskFlow - Aplikasi Manajemen Tugas & Proyek
 **TaskFlow** adalah aplikasi manajemen tugas berbasis **Flutter** dengan desain **Material 3** yang mengimplementasikan operasi **REST API CRUD** (Create, Read, Update, Delete) secara penuh.
 Aplikasi ini dibangun menggunakan arsitektur berlapis (Layered Architecture) dengan pemisahan yang jelas antara tampilan (UI), pengelolaan state, model data, dan layanan komunikasi jaringan.
 
