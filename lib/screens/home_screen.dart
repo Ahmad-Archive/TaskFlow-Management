@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../models/task_model.dart';
 import '../providers/task_provider.dart';
 import 'task_form_screen.dart';
+import 'task_detail_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -73,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 16),
               scrollDirection: Axis.horizontal,
               itemCount: _statusFilters.length,
-              separatorBuilder: (_, __) => const SizedBox(width: 8,),
+              separatorBuilder: (_, _) => const SizedBox(width: 8,),
               itemBuilder: (context, index) {
                 final filter = _statusFilters[index];
                 final isSelected = provider.selectedStatus == filter['value'];
@@ -153,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: ListView.separated(
         padding: const EdgeInsets.fromLTRB(16, 4, 16, 88),
         itemCount: tasks.length,
-        separatorBuilder: (_, __) => SizedBox(height: 10,),
+        separatorBuilder: (_, _) => SizedBox(height: 10,),
         itemBuilder: (context, index) {
           final task = tasks[index];
           return _buildTaskCard(context, task, provider);
@@ -178,7 +179,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       child: InkWell(
         borderRadius: BorderRadius.circular(14),
-        onTap: () => _openTaskForm(context, task: task),
+        onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (_) => TaskDetailScreen(task: task)));
+        },
         child: Padding(
           padding: const EdgeInsets.all(14),
           child: Column(
