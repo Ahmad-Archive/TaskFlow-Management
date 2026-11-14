@@ -11,10 +11,10 @@ Aplikasi ini dibangun menggunakan arsitektur berlapis (Layered Architecture) den
 
 ## Teknologi & PackageFramework
 - Flutter SDK (Material 3)
-- State Management: provider — Mengelola sinkronisasi data antara API dan antarmuka pengguna secara reaktif.
-- HTTP Client: dio — Menangani permintaan HTTP (GET, POST, PUT, DELETE), konfigurasi timeout, dan penerjemahan error jaringan.
-- Formatting: intl — Memformat objek DateTime menjadi format tanggal yang ramah pengguna.
-- Mock Backend: MockAPI.io — Penyedia layanan REST API untuk pengujian data.
+- State Management: provider - Mengelola sinkronisasi data antara API dan antarmuka pengguna secara reaktif.
+- HTTP Client: dio - Menangani permintaan HTTP (GET, POST, PUT, DELETE), konfigurasi timeout, dan penerjemahan error jaringan.
+- Formatting: intl - Memformat objek DateTime menjadi format tanggal yang ramah pengguna.
+- Mock Backend: MockAPI.io - Penyedia layanan REST API untuk pengujian data.
 
 ## Struktur Proyek
 ```bash
@@ -76,4 +76,4 @@ static const String _baseUrl = 'https://<kode-unik-kamu>.mockapi.io';
 flutter run
 ```
 ## Pengembang
-Ahmad-Archive — GitHub Profile
+Ahmad-Archive - GitHub Profile
